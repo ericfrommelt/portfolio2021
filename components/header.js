@@ -47,7 +47,6 @@ const NavLink = styled.a`
   @media (min-width: 800px) {
     font-size: 1.6rem;
   }
-
 `
 
 const PageHeader = ({ home, hpe, transformation, illustration, about }) => {
