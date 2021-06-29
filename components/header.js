@@ -12,6 +12,7 @@ const StyledPageHeader = styled.header`
     if (props.transformation) return '#3b3f42'
     if (props.illustration) return '#ed1e79'
     if (props.about || props.home) return '#131417'
+    if (props.exp) return '#ccc'
     return '#131417'
   }};
   
@@ -49,7 +50,7 @@ const NavLink = styled.a`
   }
 `
 
-const PageHeader = ({ home, hpe, transformation, illustration, about }) => {
+const PageHeader = ({ home, hpe, transformation, illustration, about, exp }) => {
   const router = useRouter()
 
   return (
@@ -59,6 +60,7 @@ const PageHeader = ({ home, hpe, transformation, illustration, about }) => {
       transformation={transformation}
       illustration={illustration}
       about={about}
+      exp={exp}
     >
       <NamePlate>
         <Link href="/">

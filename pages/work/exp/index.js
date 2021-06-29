@@ -59,7 +59,7 @@ const IntroParagraph = styled.p`
 export default function Exp () {
   return (
     <>
-      <PageHeader />
+      <PageHeader exp />
       <Layout>
         <Intro>
           <ExpWrapper>
