@@ -12,7 +12,7 @@ const StyledPageHeader = styled.header`
     if (props.transformation) return '#3b3f42'
     if (props.illustration) return '#ed1e79'
     if (props.about || props.home) return '#131417'
-    return '#ccc'
+    return '#131417'
   }};
   
   @media (min-width: 800px) {

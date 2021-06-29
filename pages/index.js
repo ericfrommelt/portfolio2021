@@ -76,6 +76,24 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link href="/work/vaporized-claims">
+              <a>
+                <figure>
+                  <Image
+                    src={"/images/cover/VaporizedClaimsV1.png"}
+                    alt={"Responsive Collage"}
+                    width={1000}
+                    height={1500}
+                    layout="intrinsic"
+                    />
+                </figure>
+                <WorkTitle>
+                  Vaporized Claims
+                </WorkTitle>
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/work/transformation">
               <a>
                 <figure>
