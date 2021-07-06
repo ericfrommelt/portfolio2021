@@ -19,21 +19,21 @@ export default function Aip () {
   return (
     <GridWrapper>
       <Image
-        src="/images/exp/Aip_03-2x.png"
+        src="/images/exp/AIP_03-2x.png"
         alt="AIP (1 of 4)"
         width={4000}
         height={5000}
         layout="intrinsic"
       />
       <Image
-        src="/images/exp/Aip_02-2x.png"
+        src="/images/exp/AIP_02-2x.png"
         alt="AIP (2 of 4)"
         width={4000}
         height={5000}
         layout="intrinsic"
       />
       <Image
-        src="/images/exp/Aip_01-2x.png"
+        src="/images/exp/AIP_01-2x.png"
         alt="AIP (3 of 4)"
         width={4000}
         height={5000}
@@ -41,7 +41,7 @@ export default function Aip () {
       />
       <ImageWrapper>
         <Image
-          src="/images/exp/Aip_04-2x.png"
+          src="/images/exp/AIP_04-2x.png"
           alt="AIP (4 of 4)"
           width={4000}
           height={5000}
