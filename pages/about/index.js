@@ -77,7 +77,8 @@ export default function About() {
           </IntroHeadline>
           <IntroParagraph>
             <ul>
-              <li>Brand expressions</li>
+              <li>Motion design</li>
+              <li>Graphics and brand expressions</li>
               <li>Editorial design</li>
               <li>Information design</li>
               <li>Visual storytelling</li>

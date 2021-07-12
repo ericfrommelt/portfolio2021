@@ -68,7 +68,7 @@ const SectionHeader = styled.h2`
   
   @media (min-width: 800px) {
     grid-column: ${props => props.theme.wide};
-    padding: 4em 0;
+    padding: 4em 0 2em 0;
   }
 `
 
@@ -83,7 +83,11 @@ const theme = {
   wide: '2 / span 10'
 }
 
-const IllustratedType = styled.div`
+const IllustratedType = styled.section`
+  grid-column: 2 / span 10;
+`
+
+const MotionStudy = styled.section`
   grid-column: 2 / span 10;
 `
 
@@ -141,14 +145,9 @@ const DesignSystemCode = styled.div`
   padding: 3em 0;
 `
 
-const SocialTiles = styled.div`
+const SocialTiles = styled.section`
   grid-column: 1 / span 12;
-  padding: 2em 0;
-
-  @media (min-width: 800px) {
-    grid-column: 2 / span 10;
-    padding: 2em 0;
-  }
+  margin-bottom: 8rem;
 `
 
 
@@ -207,6 +206,18 @@ export default function Hpe () {
               layout="intrinsic"
             />
           </IllustratedType>
+          <ThemeProvider theme={theme}>
+            <SectionHeader>Motion study</SectionHeader>
+          </ThemeProvider>
+          <MotionStudy>
+            <Image
+              src="/images/hpe/cybercrime_motion.gif"
+              alt="Cyber Crime motion study for Hewlett Packard Enterprise"
+              width={1920}
+              height={1080}
+              layout="intrinsic"
+            />
+          </MotionStudy>
         </GridWrapper>
         <DesignSystem>
           <DesignSystemCopy>

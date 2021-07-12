@@ -51,11 +51,6 @@ export default function Home() {
     <>
       <PageHeader home />
       <Layout>
-        <Intro>
-          <IntroHeadline>
-            Hello, I'm Eric — a multidisciplinary designer and front end developer. My work sits at the intersection of design, storytelling and technology.
-          </IntroHeadline>
-        </Intro>
         <WorkWrapper>
           <li>
             <Link href="/work/hpe">
@@ -71,6 +66,24 @@ export default function Home() {
                 </figure>
                 <WorkTitle>
                   HPE
+                </WorkTitle>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/work/transformation">
+              <a>
+                <figure>
+                  <Image
+                    src={"/images/cover/TransformationV2.png"}
+                    alt={"Styleframes"}
+                    width={1000}
+                    height={1500}
+                    layout="intrinsic"
+                  />
+                </figure>
+                <WorkTitle>
+                  Transformation
                 </WorkTitle>
               </a>
             </Link>
@@ -94,11 +107,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href="/work/transformation">
+            <Link href="/work/specimen">
               <a>
                 <figure>
                   <Image
-                    src={"/images/cover/TransformationV2.png"}
+                    src={"/images/cover/SpecimenV1.png"}
                     alt={"Styleframes"}
                     width={1000}
                     height={1500}
@@ -106,7 +119,7 @@ export default function Home() {
                   />
                 </figure>
                 <WorkTitle>
-                  Transformation
+                  Specimen
                 </WorkTitle>
               </a>
             </Link>

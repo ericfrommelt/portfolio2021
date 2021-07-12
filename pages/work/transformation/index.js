@@ -100,7 +100,7 @@ export default function Transformation () {
           </Video>
         </Intro>
         <Boards>
-          <SectionHeader>Boards</SectionHeader>
+          <SectionHeader>Styleframes</SectionHeader>
           <Image
             src="/images/transformation/transformation01.png"
             alt="Storyboard frame for a video titled Transformation"
