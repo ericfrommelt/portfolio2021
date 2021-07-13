@@ -9,6 +9,13 @@ import Aip from '../../../components/exp/Aip'
 import Everyday2016 from '../../../components/exp/Everyday2016'
 import JennAir from '../../../components/exp/JennAir'
 import Art002 from '../../../components/exp/Art002'
+import Scenario74V1 from '../../../components/exp/Scenario74V1'
+import Sats from '../../../components/exp/Sats'
+import IForgotIWasEmo from '../../../components/exp/IForgotIWasEmo'
+import ForTheKids from '../../../components/exp/ForTheKids'
+import ArtificialHumanity from '../../../components/exp/ArtificialHumanity'
+import BlackCanvas from '../../../components/exp/BlackCanvas'
+import AlphaNotation from '../../../components/exp/AlphaNotation'
 
 const Intro = styled.div`
   display: grid;
@@ -69,13 +76,19 @@ export default function Exp () {
             Explorations<br />Experiments<br />Expressions
           </IntroHeadline>
         </Intro>
+          <Scenario74V1 />
           <Art001 />
           <PanicNow />
           <Gibson />
           <Aip />
+          <ForTheKids />
           <Everyday2016 />
+          <IForgotIWasEmo />
           <JennAir />
           <Art002 />
+          <ArtificialHumanity />
+          <BlackCanvas />
+          <AlphaNotation />
       </Layout>
     </>
   )

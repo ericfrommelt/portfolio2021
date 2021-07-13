@@ -11,11 +11,19 @@ const WorkWrapper = styled.ul`
   padding: 4em 2em;
   gap: 2em;
   list-style: none;
+  margin: 0;
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
     padding: 6em;
     gap: 4em;
   }
+`
+const WorkBackground = styled.div`
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 20em;
+  background-color: #131417;
 `
 
 const WorkTitle = styled.figcaption`
@@ -51,6 +59,7 @@ export default function Home() {
     <>
       <PageHeader home />
       <Layout>
+        <WorkBackground />
         <WorkWrapper>
           <li>
             <Link href="/work/hpe">

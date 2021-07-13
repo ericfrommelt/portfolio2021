@@ -77,12 +77,12 @@ export default function About() {
           </IntroHeadline>
           <IntroParagraph>
             <ul>
-              <li>Motion design</li>
-              <li>Graphics and brand expressions</li>
               <li>Editorial design</li>
-              <li>Information design</li>
-              <li>Visual storytelling</li>
               <li>Front end design &amp; development</li>
+              <li>Graphics and brand expressions</li>
+              <li>Information design</li>
+              <li>Motion design</li>
+              <li>Visual storytelling</li>
             </ul>
             <h2>Some of the brands I've worked with:</h2>
             <BrandList>
@@ -99,7 +99,7 @@ export default function About() {
               <li>Wired</li>
             </BrandList>
             <h3>On a personal level</h3>
-            <p>I find that my interests inform my work and vice versa — art, comics, photography, science fiction, music, computers, writing code, storytelling in all its forms. I spend a lot of time outdoors running and cycling. I'm always looking for ways to improve myself and my craft.</p>
+            <p>I find that my interests inform my work and vice versa — art, comics, photography, science fiction, music, computers, writing code, storytelling in all its forms. I'm a runner and cyclist. I'm always looking for ways to improve myself and my craft. </p>
             <p>I can be reached at <a href="mailto:ericfrommelt@gmail.com">ericfrommelt@gmail.com</a></p>
           </IntroParagraph>
         </Intro>
