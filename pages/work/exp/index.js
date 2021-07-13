@@ -79,16 +79,13 @@ export default function Exp () {
           <Scenario74V1 />
           <Art001 />
           <PanicNow />
-          <Gibson />
           <Aip />
           <ForTheKids />
           <Everyday2016 />
-          <IForgotIWasEmo />
           <JennAir />
           <Art002 />
           <ArtificialHumanity />
           <BlackCanvas />
-          <AlphaNotation />
       </Layout>
     </>
   )
