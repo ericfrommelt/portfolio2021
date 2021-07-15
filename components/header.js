@@ -8,6 +8,7 @@ const StyledPageHeader = styled.header`
   align-items: baseline;
   padding: 2rem;
   background-color: ${props => {
+    if (props.creadev) return '#253A46'
     if (props.hpe) return '#01a982'
     if (props.transformation) return '#3b3f42'
     if (props.illustration) return '#ed1e79'
@@ -50,11 +51,12 @@ const NavLink = styled.a`
   }
 `
 
-const PageHeader = ({ home, hpe, transformation, illustration, about, exp }) => {
+const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, exp }) => {
   const router = useRouter()
 
   return (
     <StyledPageHeader 
+      creadev={creadev}
       home={home}
       hpe={hpe}
       transformation={transformation}

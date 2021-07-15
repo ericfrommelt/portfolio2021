@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
@@ -75,6 +74,24 @@ export default function Home() {
                 </figure>
                 <WorkTitle>
                   HPE
+                </WorkTitle>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/work/creadev">
+              <a>
+                <figure>
+                  <Image
+                    src={"/images/cover/CreaDevV1.png"}
+                    alt={"Brand concept design"}
+                    width={1000}
+                    height={1500}
+                    layout="intrinsic"
+                    />
+                </figure>
+                <WorkTitle>
+                  CreaDev Conference
                 </WorkTitle>
               </a>
             </Link>
