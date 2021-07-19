@@ -53,7 +53,7 @@ const PageFooter = () => {
   return (
     <StyledPageFooter>
       <Info>
-        <p>Eric Frommelt<br/>Designer</p>
+        <p>Eric Frommelt<br/>Creative Developer / Designer</p>
         <p><a href="mailto:ericfrommelt@gmail.com">ericfrommelt@gmail.com</a></p>
       </Info>
       <Availability>

@@ -14,6 +14,7 @@ const StyledPageHeader = styled.header`
     if (props.illustration) return '#ed1e79'
     if (props.about || props.home) return '#131417'
     if (props.exp) return '#ccc'
+    if (props.terminalindex) return '#423DB4'
     return '#131417'
   }};
   
@@ -51,7 +52,7 @@ const NavLink = styled.a`
   }
 `
 
-const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, exp }) => {
+const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, exp, terminalindex }) => {
   const router = useRouter()
 
   return (
@@ -63,6 +64,7 @@ const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, ex
       illustration={illustration}
       about={about}
       exp={exp}
+      terminalindex={terminalindex}
     >
       <NamePlate>
         <Link href="/">

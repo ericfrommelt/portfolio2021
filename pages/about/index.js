@@ -73,7 +73,7 @@ export default function About() {
             />
           </IntroImage>
           <IntroHeadline>
-            I'm Eric Frommelt, a multidisciplinary designer and developer. My areas of expertise include:
+            I'm Eric Frommelt, a creative developer and designer. My areas of expertise include:
           </IntroHeadline>
           <IntroParagraph>
             <ul>

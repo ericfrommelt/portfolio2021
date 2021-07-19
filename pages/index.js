@@ -97,19 +97,19 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href="/work/transformation">
+            <Link href="/work/terminalindex">
               <a>
                 <figure>
                   <Image
-                    src={"/images/cover/TransformationV2.png"}
-                    alt={"Styleframes"}
+                    src={"/images/cover/TerminalIndex.png"}
+                    alt={"Interaction sketchbook"}
                     width={1000}
                     height={1500}
                     layout="intrinsic"
-                  />
+                    />
                 </figure>
                 <WorkTitle>
-                  Transformation
+                  Terminal Index
                 </WorkTitle>
               </a>
             </Link>
@@ -128,6 +128,24 @@ export default function Home() {
                 </figure>
                 <WorkTitle>
                   Vaporized Claims
+                </WorkTitle>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/work/transformation">
+              <a>
+                <figure>
+                  <Image
+                    src={"/images/cover/TransformationV2.png"}
+                    alt={"Styleframes"}
+                    width={1000}
+                    height={1500}
+                    layout="intrinsic"
+                  />
+                </figure>
+                <WorkTitle>
+                  Transformation
                 </WorkTitle>
               </a>
             </Link>
