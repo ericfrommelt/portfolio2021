@@ -191,8 +191,8 @@ export default function Home() {
               <a>
                 <figure>
                   <Image
-                    src={"/images/cover/ExpressionsV2.png"}
-                    alt={"Abstract 3D image"}
+                    src={"/images/cover/ExpressionsV5.png"}
+                    alt={"Abstract 2d images"}
                     width={1000}
                     height={1500}
                     layout="intrinsic"
