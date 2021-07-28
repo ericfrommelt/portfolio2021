@@ -63,21 +63,13 @@ export default function About() {
       <PageHeader about />
       <Layout>
         <Intro>
-          <IntroImage>
-            <Image 
-              src={"/images/about/ef-portrait-001.jpg"}
-              alt={"Portrait of Eric Frommelt"}
-              width={1739}
-              height={1739}
-              layout={"intrinsic"}
-            />
-          </IntroImage>
           <IntroHeadline>
             I'm Eric Frommelt, a designer and developer. My areas of expertise include:
           </IntroHeadline>
           <IntroParagraph>
             <ul>
               <li>UX/UI design</li>
+              <li>Front end design + development</li>
               <li>Motion design</li>
               <li>Brand design</li>
               <li>Illustration + graphics</li>
@@ -100,6 +92,15 @@ export default function About() {
             <h3>Contact</h3>
             <p>I can be reached at <a href="mailto:ericfrommelt@gmail.com">ericfrommelt@gmail.com</a></p>
           </IntroParagraph>
+          <IntroImage>
+            <Image 
+              src={"/images/about/ef-portrait-001.jpg"}
+              alt={"Portrait of Eric Frommelt"}
+              width={1739}
+              height={1739}
+              layout={"intrinsic"}
+            />
+          </IntroImage>
         </Intro>
       </Layout>
     </>
