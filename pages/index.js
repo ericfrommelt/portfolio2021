@@ -4,19 +4,6 @@ import styled from 'styled-components'
 import PageHeader from '../components/header'
 import Layout from '../components/layout'
 
-const WorkWrapper = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 4em 2em;
-  gap: 2em;
-  list-style: none;
-  margin: 0;
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-    padding: 6em;
-    gap: 4em;
-  }
-`
 const WorkBackground = styled.div`
   position: absolute;
   z-index: 0;
@@ -24,33 +11,36 @@ const WorkBackground = styled.div`
   height: 20em;
   background-color: #131417;
 `
+const WorkSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 6rem 0;
+`
+
+const WorkWrapper = styled.ul`
+  grid-column: 2 / span 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  @media (min-width: 1800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 2600px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`
+const WorkCover = styled.li`
+  
+`
 
 const WorkTitle = styled.figcaption`
   font-size: 2rem;
-`
-
-const Intro = styled.div`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 4em 0;
-  background-color: #131417;
-  color: white;
-
-  @media (min-width: 800px) {
-    padding: 6em 0;
-  }
-`
-
-const IntroHeadline = styled.h1`
-  grid-column: 2 / span 10;
-  font-size: 2.6rem;
-  font-weight: 200;
-  line-height: 3.6rem;
-
-  @media (min-width: 800px) {
-    font-size: 3.6rem;
-    line-height: 4.6rem;
-  }
 `
 
 export default function Home() {
@@ -59,116 +49,136 @@ export default function Home() {
       <PageHeader home />
       <Layout>
         <WorkBackground />
-        <WorkWrapper>
-          <li>
-            <Link href="/work/terminalindex">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/TerminalIndex.png"}
-                    alt={"Interaction sketchbook"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
+        <WorkSection>
+          <WorkWrapper>
+            <WorkCover>
+              <Link href="/work/2021">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/2021.png"}
+                      alt={"Art 2021"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                      />
+                  </figure>
+                  <WorkTitle>
+                    2021
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/terminalindex">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/TerminalIndex.png"}
+                      alt={"Interaction sketchbook"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                      />
+                  </figure>
+                  <WorkTitle>
+                    Terminal Index
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/vaporized-claims">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/VaporizedClaimsV1.png"}
+                      alt={"Responsive Collage"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                      />
+                  </figure>
+                  <WorkTitle>
+                    Vaporized Claims
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/transformation">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/TransformationV2.png"}
+                      alt={"Styleframes"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
                     />
-                </figure>
-                <WorkTitle>
-                  Terminal Index
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/vaporized-claims">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/VaporizedClaimsV1.png"}
-                    alt={"Responsive Collage"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
+                  </figure>
+                  <WorkTitle>
+                    Transformation
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/specimen">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/SpecimenV1.png"}
+                      alt={"Styleframes"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
                     />
-                </figure>
-                <WorkTitle>
-                  Vaporized Claims
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/transformation">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/TransformationV2.png"}
-                    alt={"Styleframes"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
-                  />
-                </figure>
-                <WorkTitle>
-                  Transformation
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/specimen">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/SpecimenV1.png"}
-                    alt={"Styleframes"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
-                  />
-                </figure>
-                <WorkTitle>
-                  Specimen
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/illustration">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/IllustrationV1.png"}
-                    alt={"Augmented Reality Danger illustration"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
-                  />
-                </figure>
-                <WorkTitle>
-                  Illustration
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/exp">
-              <a>
-                <figure>
-                  <Image
-                    src={"/images/cover/ExpressionsV5.png"}
-                    alt={"Abstract 2d images"}
-                    width={1000}
-                    height={1500}
-                    layout="intrinsic"
-                  />
-                </figure>
-                <WorkTitle>
-                  Explorations
-                </WorkTitle>
-              </a>
-            </Link>
-          </li>
-        </WorkWrapper>
+                  </figure>
+                  <WorkTitle>
+                    Specimen
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/illustration">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/IllustrationV1.png"}
+                      alt={"Augmented Reality Danger illustration"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                    />
+                  </figure>
+                  <WorkTitle>
+                    Illustration
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/exp">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/ExpressionsV5.png"}
+                      alt={"Abstract 2d images"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                    />
+                  </figure>
+                  <WorkTitle>
+                    Explorations
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+          </WorkWrapper>
+        </WorkSection>
       </Layout>
     </>
   )

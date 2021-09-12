@@ -3,10 +3,9 @@ import styled from 'styled-components'
 import { useRouter } from 'next/router'
 
 const StyledPageHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2rem 0;
   background-color: ${props => {
     if (props.creadev) return '#253A46'
     if (props.hpe) return '#01a982'
@@ -19,11 +18,12 @@ const StyledPageHeader = styled.header`
   }};
   
   @media (min-width: 800px) {
-    padding: 6rem;
+    padding: 6rem 0;
   }
 `
 
 const NamePlate = styled.div`
+  grid-column: 2 / span 5;
   color: rgba(255, 255, 255, 1);
   font-size: 1.2rem;
 
@@ -33,9 +33,11 @@ const NamePlate = styled.div`
 `
 
 const Nav = styled.ul`
+  grid-column: 7 / span 5;
   list-style: none;
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 `
 
 const NavItem = styled.li`
@@ -88,7 +90,7 @@ const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, ex
         </NavItem>
       </Nav>
     </StyledPageHeader>
-  )
+)
 }
 
 export default PageHeader
