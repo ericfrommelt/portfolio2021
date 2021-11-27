@@ -73,7 +73,7 @@ export default function Illustration () {
       <Layout>
         <Intro>
           <IntroHeadline>
-            Select illustrtion assignments.
+            Select illustration assignments.
           </IntroHeadline>
           <IntroParagraph>
             I love reading a brief, learning about something new, and visualizing a story — whether it's finding bias in Deep-Learning Systems or how the PGA tracks golf balls during a game. I specialize in visualizing technical subjects.
