@@ -52,19 +52,19 @@ export default function Home() {
         <WorkSection>
           <WorkWrapper>
             <WorkCover>
-              <Link href="/work/2021">
+              <Link href="/work/hpe">
                 <a>
                   <figure>
                     <Image
-                      src={"/images/cover/2021.png"}
-                      alt={"Art 2021"}
+                      src={"/images/cover/HPEV2.png"}
+                      alt={"Styleframes"}
                       width={1000}
                       height={1500}
                       layout="intrinsic"
-                      />
+                    />
                   </figure>
                   <WorkTitle>
-                    2021
+                    HPE
                   </WorkTitle>
                 </a>
               </Link>
@@ -124,19 +124,19 @@ export default function Home() {
               </Link>
             </WorkCover>
             <WorkCover>
-              <Link href="/work/specimen">
+              <Link href="/work/2021">
                 <a>
                   <figure>
                     <Image
-                      src={"/images/cover/SpecimenV1.png"}
-                      alt={"Styleframes"}
+                      src={"/images/cover/2021.png"}
+                      alt={"Art 2021"}
                       width={1000}
                       height={1500}
                       layout="intrinsic"
-                    />
+                      />
                   </figure>
                   <WorkTitle>
-                    Specimen
+                    2021
                   </WorkTitle>
                 </a>
               </Link>
@@ -173,6 +173,24 @@ export default function Home() {
                   </figure>
                   <WorkTitle>
                     Explorations
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/specimen">
+                <a>
+                  <figure>
+                    <Image
+                      src={"/images/cover/SpecimenV1.png"}
+                      alt={"Styleframes"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                    />
+                  </figure>
+                  <WorkTitle>
+                    Specimen
                   </WorkTitle>
                 </a>
               </Link>

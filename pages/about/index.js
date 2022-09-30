@@ -49,12 +49,16 @@ const IntroImage = styled.figure`
   }
 `
 
+const BrandHead = styled.h2`
+  margin-top: 4rem;
+`
+
 const BrandList = styled.ul`
   column-count: 2;
   column-width: 50%;
   column-fill: auto;
   list-style: none;
-  padding: 0;
+  padding: 0 0 4rem 0;
 `
 
 export default function About() {
@@ -64,17 +68,17 @@ export default function About() {
       <Layout>
         <Intro>
           <IntroHeadline>
-            I'm Eric Frommelt, a designer and developer. My areas of expertise include:
+            I'm Eric Frommelt, a designer and developer. My areas of practice include:
           </IntroHeadline>
           <IntroParagraph>
             <ul>
-              <li>UX/UI design</li>
               <li>Front end design + development</li>
+              <li>Prototyping</li>
               <li>Motion design</li>
               <li>Brand design</li>
               <li>Illustration + graphics</li>
             </ul>
-            <h2>Some of the brands I've worked with:</h2>
+            <BrandHead>Brands I've worked with:</BrandHead>
             <BrandList>
               <li>ABC</li>
               <li>Accenture</li>
@@ -94,7 +98,7 @@ export default function About() {
           </IntroParagraph>
           <IntroImage>
             <Image 
-              src={"/images/about/ef-portrait-001.jpg"}
+              src={"/images/about/ef-portrait-002.jpg"}
               alt={"Portrait of Eric Frommelt"}
               width={1739}
               height={1739}

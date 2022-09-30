@@ -6,4 +6,4 @@ Developed in NextJs and styled components
 
 ### Todo
 
-- [] Write readme
+
