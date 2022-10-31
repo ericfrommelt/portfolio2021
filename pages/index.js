@@ -51,20 +51,20 @@ export default function Home() {
         <WorkBackground />
         <WorkSection>
           <WorkWrapper>
-            <WorkCover>
-              <Link href="/work/hpe">
+          <WorkCover>
+              <Link href="/work/2021">
                 <a>
                   <figure>
                     <Image
-                      src={"/images/cover/HPEV2.png"}
-                      alt={"Styleframes"}
+                      src={"/images/cover/2021.png"}
+                      alt={"Art 2021"}
                       width={1000}
                       height={1500}
                       layout="intrinsic"
-                    />
+                      />
                   </figure>
                   <WorkTitle>
-                    HPE
+                    2021
                   </WorkTitle>
                 </a>
               </Link>
@@ -119,24 +119,6 @@ export default function Home() {
                   </figure>
                   <WorkTitle>
                     Transformation
-                  </WorkTitle>
-                </a>
-              </Link>
-            </WorkCover>
-            <WorkCover>
-              <Link href="/work/2021">
-                <a>
-                  <figure>
-                    <Image
-                      src={"/images/cover/2021.png"}
-                      alt={"Art 2021"}
-                      width={1000}
-                      height={1500}
-                      layout="intrinsic"
-                      />
-                  </figure>
-                  <WorkTitle>
-                    2021
                   </WorkTitle>
                 </a>
               </Link>
