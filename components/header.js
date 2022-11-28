@@ -54,7 +54,7 @@ const NavLink = styled.a`
   }
 `
 
-const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, exp, terminalindex }) => {
+const PageHeader = ({ creadev, home, hpe, transformation, illustration, about, exp, terminalindex }) => {
   const router = useRouter()
 
   return (

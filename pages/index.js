@@ -39,8 +39,21 @@ const WorkCover = styled.li`
   
 `
 
+const CoverArt = styled.figure`
+& > span {
+  border-radius: 6px;
+  overflow: hidden;
+}
+`
+
 const WorkTitle = styled.figcaption`
-  font-size: 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: rgba(80, 80, 80, 100);
 `
 
 export default function Home() {
@@ -52,27 +65,9 @@ export default function Home() {
         <WorkSection>
           <WorkWrapper>
             <WorkCover>
-              <Link href="/work/hpe">
-                <a>
-                  <figure>
-                    <Image
-                      src={"/images/cover/HPEV2.png"}
-                      alt={"Styleframes"}
-                      width={1000}
-                      height={1500}
-                      layout="intrinsic"
-                    />
-                  </figure>
-                  <WorkTitle>
-                    HPE
-                  </WorkTitle>
-                </a>
-              </Link>
-            </WorkCover>
-            <WorkCover>
               <Link href="/work/terminalindex">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/TerminalIndex.png"}
                       alt={"Interaction sketchbook"}
@@ -80,7 +75,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                       />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Terminal Index
                   </WorkTitle>
@@ -90,7 +85,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/vaporized-claims">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/VaporizedClaimsV1.png"}
                       alt={"Responsive Collage"}
@@ -98,7 +93,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                       />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Vaporized Claims
                   </WorkTitle>
@@ -108,7 +103,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/transformation">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/TransformationV2.png"}
                       alt={"Styleframes"}
@@ -116,7 +111,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                     />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Transformation
                   </WorkTitle>
@@ -126,7 +121,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/2021">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/2021.png"}
                       alt={"Art 2021"}
@@ -134,7 +129,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                       />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     2021
                   </WorkTitle>
@@ -144,7 +139,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/illustration">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/IllustrationV1.png"}
                       alt={"Augmented Reality Danger illustration"}
@@ -152,7 +147,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                     />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Illustration
                   </WorkTitle>
@@ -162,7 +157,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/exp">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/ExpressionsV5.png"}
                       alt={"Abstract 2d images"}
@@ -170,7 +165,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                     />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Explorations
                   </WorkTitle>
@@ -180,7 +175,7 @@ export default function Home() {
             <WorkCover>
               <Link href="/work/specimen">
                 <a>
-                  <figure>
+                  <CoverArt>
                     <Image
                       src={"/images/cover/SpecimenV1.png"}
                       alt={"Styleframes"}
@@ -188,7 +183,7 @@ export default function Home() {
                       height={1500}
                       layout="intrinsic"
                     />
-                  </figure>
+                  </CoverArt>
                   <WorkTitle>
                     Specimen
                   </WorkTitle>

@@ -34,7 +34,17 @@ const IntroHeadline = styled.h1`
   }
 `
 
-const Artwork = styled.figure`
+const ArtworkL = styled.figure`
+  padding: 4rem 0;
+  grid-column: 2 / span 5;
+`
+
+const ArtworkR = styled.figure`
+  padding: 4rem 0;
+  grid-column: 7 / span 5;
+
+  `
+const ArtworkW = styled.figure`
   padding: 4rem 0;
   grid-column: 2 / span 10;
 `
@@ -56,20 +66,17 @@ export default function Art2021 () {
           </IntroHeadline>
         </Intro>
         <GridWrapper>
-          <Artwork>
+          <ArtworkL>
             <Image
               src="/images/2021/GeneticDeflection.png"
-              alt="Digital artwork by Eric Frommelt titled Genetic Deflection"
+              alt="Digital artwork by Eric Frommelt"
               width={1600}
               height={1600}
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Genetic Deflection</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/HallOfJustice.png"
               alt="Digital artwork by Eric Frommelt titled Hall of Justice"
@@ -78,11 +85,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Hall of Justice</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/Scales.png"
               alt="Digital artwork by Eric Frommelt titled Scales"
@@ -91,11 +95,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Scales</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkW>
             <Image
               src="/images/2021/Panic01.png"
               alt="Digital artwork by Eric Frommelt titled Panic 1"
@@ -104,11 +105,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Panic 01</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkW>
+          <ArtworkL>
             <Image
               src="/images/2021/Panic02.png"
               alt="Digital artwork by Eric Frommelt titled Panic 2"
@@ -117,11 +115,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Panic 02</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/Panic03.png"
               alt="Digital artwork by Eric Frommelt titled Panic 3"
@@ -130,11 +125,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Panic 03</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/Panic04.png"
               alt="Digital artwork by Eric Frommelt titled Panic 4"
@@ -143,11 +135,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Panic 04</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/Panic05.png"
               alt="Digital artwork by Eric Frommelt titled Panic 5"
@@ -159,8 +148,8 @@ export default function Art2021 () {
             <ArtworkInfo>
               <p>Panic 05</p>
             </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/collapse01.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 1"
@@ -169,11 +158,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 01</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/collapse02.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 2"
@@ -182,11 +168,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 02</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/collapse03.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 3"
@@ -195,11 +178,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 03</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/collapse04.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 4"
@@ -208,11 +188,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 04</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/collapse05.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 5"
@@ -221,11 +198,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 05</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/collapse06.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 6"
@@ -234,11 +208,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 06</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkR>
+          <ArtworkL>
             <Image
               src="/images/2021/collapse07.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 7"
@@ -247,11 +218,8 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 07</p>
-            </ArtworkInfo>
-          </Artwork>
-          <Artwork>
+          </ArtworkL>
+          <ArtworkR>
             <Image
               src="/images/2021/collapse08.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 8"
@@ -260,10 +228,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Collapse 08</p>
-            </ArtworkInfo>
-          </Artwork>
+          </ArtworkR>
         </GridWrapper>
       </Layout>
     </>

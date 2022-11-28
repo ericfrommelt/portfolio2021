@@ -248,13 +248,6 @@ export default function Transformation () {
             height={1080}
             layout="intrinsic"
           />
-          <Image
-            src="/images/transformation/transformation22.png"
-            alt="Storyboard frame for a video titled Transformation"
-            width={1920}
-            height={1080}
-            layout="intrinsic"
-          />
         </Boards>
       </Layout>
     </>
