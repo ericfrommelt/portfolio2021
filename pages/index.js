@@ -64,27 +64,6 @@ export default function Home() {
         <WorkBackground />
         <WorkSection>
           <WorkWrapper>
-<<<<<<< HEAD
-=======
-          <WorkCover>
-              <Link href="/work/2021">
-                <a>
-                  <figure>
-                    <Image
-                      src={"/images/cover/2021.png"}
-                      alt={"Art 2021"}
-                      width={1000}
-                      height={1500}
-                      layout="intrinsic"
-                      />
-                  </figure>
-                  <WorkTitle>
-                    2021
-                  </WorkTitle>
-                </a>
-              </Link>
-            </WorkCover>
->>>>>>> e53feed48183d1c6d5775eca2fe9cb2d932bd68b
             <WorkCover>
               <Link href="/work/terminalindex">
                 <a>
@@ -140,7 +119,6 @@ export default function Home() {
               </Link>
             </WorkCover>
             <WorkCover>
-<<<<<<< HEAD
               <Link href="/work/2021">
                 <a>
                   <CoverArt>
@@ -159,8 +137,6 @@ export default function Home() {
               </Link>
             </WorkCover>
             <WorkCover>
-=======
->>>>>>> e53feed48183d1c6d5775eca2fe9cb2d932bd68b
               <Link href="/work/illustration">
                 <a>
                   <CoverArt>
