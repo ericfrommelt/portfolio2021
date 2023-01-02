@@ -45,11 +45,11 @@ const IntroImage = styled.figure`
   grid-row: 1 / span 2;
 
   @media (min-width: 800px) {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 2;
   }
 `
 
-const BrandHead = styled.h2`
+const BrandHead = styled.h3`
   margin-top: 4rem;
 `
 
@@ -68,27 +68,32 @@ export default function About() {
       <Layout>
         <Intro>
           <IntroHeadline>
-            I'm Eric Frommelt, a designer and developer. My areas of practice include:
+            I'm Eric Frommelt, a Design Director based in Los Angeles. I visualize concepts, stories and UI - across media and platforms.
           </IntroHeadline>
           <IntroParagraph>
-            <ul>
-              <li>Front end design + development</li>
-              <li>Prototyping</li>
-              <li>Motion design</li>
-              <li>Brand design</li>
-              <li>Illustration + graphics</li>
-            </ul>
-            <BrandHead>Brands I've worked with:</BrandHead>
+            <h3>What I do:</h3>
+              <BrandList>
+                <li>Interaction design</li>
+                <li>Motion design</li>
+                <li>Brand design</li>
+                <li>Illustration + graphics</li>
+              </BrandList>
+            <BrandHead>Agencies and brands I've worked with:</BrandHead>
             <BrandList>
               <li>ABC</li>
               <li>Accenture</li>
               <li>American Express</li>
               <li>Citi</li>
               <li>Delta</li>
+              <li>Digitas</li>
               <li>ESPN</li>
+              <li>Fast Company</li>
+              <li>Fortune</li>
               <li>HPE</li>
               <li>Mtv</li>
+              <li>McCann</li>
               <li>New Line Cinema</li>
+              <li>Ogilvy</li>
               <li>Showtime</li>
               <li>Walt Disney</li>
               <li>Wired</li>

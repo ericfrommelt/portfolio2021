@@ -65,55 +65,19 @@ export default function Home() {
         <WorkSection>
           <WorkWrapper>
             <WorkCover>
-              <Link href="/work/terminalindex">
+              <Link href="/work/2022">
                 <a>
                   <CoverArt>
                     <Image
-                      src={"/images/cover/TerminalIndex.png"}
-                      alt={"Interaction sketchbook"}
+                      src={"/images/cover/2022.png"}
+                      alt={"Art 2021"}
                       width={1000}
                       height={1500}
                       layout="intrinsic"
                       />
                   </CoverArt>
                   <WorkTitle>
-                    Terminal Index
-                  </WorkTitle>
-                </a>
-              </Link>
-            </WorkCover>
-            <WorkCover>
-              <Link href="/work/vaporized-claims">
-                <a>
-                  <CoverArt>
-                    <Image
-                      src={"/images/cover/VaporizedClaimsV1.png"}
-                      alt={"Responsive Collage"}
-                      width={1000}
-                      height={1500}
-                      layout="intrinsic"
-                      />
-                  </CoverArt>
-                  <WorkTitle>
-                    Vaporized Claims
-                  </WorkTitle>
-                </a>
-              </Link>
-            </WorkCover>
-            <WorkCover>
-              <Link href="/work/transformation">
-                <a>
-                  <CoverArt>
-                    <Image
-                      src={"/images/cover/TransformationV2.png"}
-                      alt={"Styleframes"}
-                      width={1000}
-                      height={1500}
-                      layout="intrinsic"
-                    />
-                  </CoverArt>
-                  <WorkTitle>
-                    Transformation
+                    2022
                   </WorkTitle>
                 </a>
               </Link>
@@ -173,6 +137,60 @@ export default function Home() {
               </Link>
             </WorkCover>
             <WorkCover>
+              <Link href="/work/terminalindex">
+                <a>
+                  <CoverArt>
+                    <Image
+                      src={"/images/cover/TerminalIndex.png"}
+                      alt={"Interaction sketchbook"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                      />
+                  </CoverArt>
+                  <WorkTitle>
+                    Terminal Index
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/vaporized-claims">
+                <a>
+                  <CoverArt>
+                    <Image
+                      src={"/images/cover/VaporizedClaimsV1.png"}
+                      alt={"Responsive Collage"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                      />
+                  </CoverArt>
+                  <WorkTitle>
+                    Vaporized Claims
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/transformation">
+                <a>
+                  <CoverArt>
+                    <Image
+                      src={"/images/cover/TransformationV2.png"}
+                      alt={"Styleframes"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                    />
+                  </CoverArt>
+                  <WorkTitle>
+                    Transformation
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
               <Link href="/work/specimen">
                 <a>
                   <CoverArt>
@@ -186,6 +204,24 @@ export default function Home() {
                   </CoverArt>
                   <WorkTitle>
                     Specimen
+                  </WorkTitle>
+                </a>
+              </Link>
+            </WorkCover>
+            <WorkCover>
+              <Link href="/work/creadev">
+                <a>
+                  <CoverArt>
+                    <Image
+                      src={"/images/cover/CreaDevV1.png"}
+                      alt={"Styleframes"}
+                      width={1000}
+                      height={1500}
+                      layout="intrinsic"
+                    />
+                  </CoverArt>
+                  <WorkTitle>
+                    Crea.Dev
                   </WorkTitle>
                 </a>
               </Link>

@@ -13,6 +13,8 @@ const Intro = styled.div`
   grid-template-columns: repeat(12, 1fr);
   background-color: #131417;
   padding: 4em 0;
+
+  
   color: white;
 
   @media (min-width: 800px) {
@@ -35,24 +37,141 @@ const IntroHeadline = styled.h1`
 `
 
 const ArtworkL = styled.figure`
-  padding: 4rem 0;
+  padding: 2rem 0;
   grid-column: 2 / span 5;
-`
 
-const ArtworkR = styled.figure`
-  padding: 4rem 0;
-  grid-column: 7 / span 5;
-
+  @media (min-width: 800px) {
+    padding: 4rem 0;
+  }
   `
-const ArtworkW = styled.figure`
-  padding: 4rem 0;
-  grid-column: 2 / span 10;
-`
+  
+  const ArtworkR = styled.figure`
+  padding: 2rem 0;
+  grid-column: 7 / span 5;
+  
+  @media (min-width: 800px) {
+    padding: 4rem 0;
+  }
+  `
+  const ArtworkW = styled.figure`
+  padding: 2rem 0;
+  grid-column: 1 / span 12;
+  display: flex;
 
-const ArtworkInfo = styled.figcaption`
+  @media (min-width: 800px) {
+    padding: 4rem 0;
+  }
+  `
+  
+  const ArtworkInfo = styled.figcaption`
   font-size: .8rem;
   grid-column: 2 / span 10;
+  `
+  
+  const StoryOne = styled.figcaption`
+  grid-column: 2 / span 10;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+  font-size: .8rem;
+  
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 4rem 0;
+  }
+
+  `
+  const WorkTitle = styled.figcaption`
+  display:none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: rgba(80, 80, 80, 100);
+  @media (min-width: 900px) {
+    display: block;
+  }
 `
+  const WorkTitle2 = styled.figcaption`
+  display:none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  text-align: center;
+  padding: 4rem 0;
+  color: rgba(80, 80, 80, 100);
+  grid-column: 1 / span 12;
+  display: block;
+  @media (min-width: 900px) {
+    display: block;
+  }
+`
+
+const WorkWrapper = styled.ul`
+  grid-column: 1 / span 12;
+  list-style: none;
+  margin: 4rem 0;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  `
+  
+  const WhiteSpace = styled.section`
+  grid-column: 1 / span 12;
+  min-height: 6rem;
+  @media (min-width: 800px) {
+    min-height: 10rem;
+  }
+`
+const WorkWrapper2 = styled.ul`
+  grid-column: 1 / span 12;
+  list-style: none;
+  margin: 4rem 0;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  `
+
+  const WorkWrapper3 = styled.ul`
+  grid-column: 1 / span 12;
+  list-style: none;
+  margin: 4rem 0;
+  padding: 0;
+  display: grid;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  `
+  
+//   const WhiteSpace = styled.section`
+//   grid-column: 1 / span 12;
+//   min-height: 6rem;
+//   @media (min-width: 800px) {
+//     min-height: 10rem;
+//   }
+// `
 
 
 export default function Art2021 () {
@@ -66,7 +185,7 @@ export default function Art2021 () {
           </IntroHeadline>
         </Intro>
         <GridWrapper>
-          <ArtworkL>
+          <WorkWrapper>
             <Image
               src="/images/2021/GeneticDeflection.png"
               alt="Digital artwork by Eric Frommelt"
@@ -75,8 +194,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
+         
             <Image
               src="/images/2021/HallOfJustice.png"
               alt="Digital artwork by Eric Frommelt titled Hall of Justice"
@@ -85,8 +203,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkR>
-          <ArtworkL>
+         
             <Image
               src="/images/2021/Scales.png"
               alt="Digital artwork by Eric Frommelt titled Scales"
@@ -95,7 +212,17 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
+            <WorkTitle>
+              <h3>Genetic Deflection</h3>
+            </WorkTitle>
+            <WorkTitle>
+              <h3>Hall Of Justice</h3>
+            </WorkTitle>
+            <WorkTitle>
+              <h3>Scales</h3>
+            </WorkTitle>
+          </WorkWrapper>
+          {/* <WhiteSpace /> */}
           <ArtworkW>
             <Image
               src="/images/2021/Panic01.png"
@@ -106,7 +233,7 @@ export default function Art2021 () {
               quality={90}
             />
           </ArtworkW>
-          <ArtworkL>
+          <WorkWrapper2>
             <Image
               src="/images/2021/Panic02.png"
               alt="Digital artwork by Eric Frommelt titled Panic 2"
@@ -115,8 +242,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
+          
             <Image
               src="/images/2021/Panic03.png"
               alt="Digital artwork by Eric Frommelt titled Panic 3"
@@ -125,8 +251,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkR>
-          <ArtworkL>
+         
             <Image
               src="/images/2021/Panic04.png"
               alt="Digital artwork by Eric Frommelt titled Panic 4"
@@ -135,8 +260,7 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
+          
             <Image
               src="/images/2021/Panic05.png"
               alt="Digital artwork by Eric Frommelt titled Panic 5"
@@ -145,11 +269,10 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Panic 05</p>
-            </ArtworkInfo>
-          </ArtworkR>
-          <ArtworkL>
+          </WorkWrapper2>
+            <WorkTitle2>Panic Now [Grafix for a game]</WorkTitle2>
+          <WhiteSpace />
+          <WorkWrapper2>
             <Image
               src="/images/2021/collapse01.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 1"
@@ -157,9 +280,7 @@ export default function Art2021 () {
               height={1600}
               layout="intrinsic"
               quality={90}
-            />
-          </ArtworkL>
-          <ArtworkR>
+              />
             <Image
               src="/images/2021/collapse02.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 2"
@@ -167,9 +288,10 @@ export default function Art2021 () {
               height={1600}
               layout="intrinsic"
               quality={90}
-            />
-          </ArtworkR>
-          <ArtworkL>
+              />
+          </WorkWrapper2>
+              <WorkTitle2>collapse / technographics</WorkTitle2>
+          <WorkWrapper3>
             <Image
               src="/images/2021/collapse03.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 3"
@@ -178,8 +300,6 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
             <Image
               src="/images/2021/collapse04.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 4"
@@ -188,8 +308,6 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkR>
-          <ArtworkL>
             <Image
               src="/images/2021/collapse05.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 5"
@@ -198,8 +316,6 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
             <Image
               src="/images/2021/collapse06.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 6"
@@ -208,8 +324,6 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkR>
-          <ArtworkL>
             <Image
               src="/images/2021/collapse07.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 7"
@@ -218,8 +332,6 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
-          </ArtworkL>
-          <ArtworkR>
             <Image
               src="/images/2021/collapse08.png"
               alt="Digital artwork by Eric Frommelt titled Collapse 8"
@@ -228,6 +340,13 @@ export default function Art2021 () {
               layout="intrinsic"
               quality={90}
             />
+          </WorkWrapper3>
+          <WorkWrapper3>
+          </WorkWrapper3>
+          <WorkWrapper3>
+  
+          </WorkWrapper3>
+          <ArtworkR>
           </ArtworkR>
         </GridWrapper>
       </Layout>

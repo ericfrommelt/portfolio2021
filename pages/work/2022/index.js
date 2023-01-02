@@ -47,8 +47,16 @@ const ArtworkInfo = styled.figcaption`
 const ArtX3 = styled.section`
   grid-column: 1 / span 12;
   display: flex;
+  margin: 2rem 0;
   padding: 2rem;
   gap: 1rem;
+`
+
+const TeamYoshi = styled.section`
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 8rem 0;
 `
 
 export default function Art2022 () {
@@ -71,9 +79,6 @@ export default function Art2022 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Untitled</p>
-            </ArtworkInfo>
           </Artwork>
           <Artwork>
             <Image
@@ -84,9 +89,6 @@ export default function Art2022 () {
               layout="intrinsic"
               quality={90}
             />
-            <ArtworkInfo>
-              <p>Untitled</p>
-            </ArtworkInfo>
           </Artwork>
 
           <ArtX3>
@@ -158,7 +160,209 @@ export default function Art2022 () {
               quality={90}
             />
           </ArtX3>
+
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-12.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-13.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-14.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-15.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+
+          <Artwork>
+            <Image
+              src="/images/2022/2022-16.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </Artwork>
+
+          <Artwork>
+            <Image
+              src="/images/2022/2022-17.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </Artwork>
+          <TeamYoshi>
+            <Image
+              src="/images/2022/2022-18.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-19.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-20.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-21.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </TeamYoshi>
          
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-23.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-29.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-24.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-26.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-27.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-28.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-31_2022-31.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-31_2022-32.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-31_2022-33.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-31_2022-34.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
+          <ArtX3>
+            <Image
+              src="/images/2022/2022-31_2022-35.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+            <Image
+              src="/images/2022/2022-31_2022-36.png"
+              alt="Untitled Digital artwork by Eric Frommelt"
+              width={1080}
+              height={1080}
+              layout="intrinsic"
+              quality={90}
+            />
+          </ArtX3>
           
         </GridWrapper>
       </Layout>

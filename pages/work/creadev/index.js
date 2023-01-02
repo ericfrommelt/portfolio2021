@@ -28,7 +28,7 @@ const IntroHeadline = styled.h1`
   color: #E9FF25;
 
   @media (min-width: 800px) {
-    grid-column: 6 / span 6;
+    grid-column: 4 / span 8;
     font-size: 3.6rem;
     line-height: 4.6rem;
   }
@@ -80,7 +80,7 @@ export default function CreaDev () {
       <Layout>
         <Intro>
           <IntroHeadline>
-            Brand design concept for a conference focused on digital art and creative coding.
+            Brand design concept for a conference focused on digital art and creative coding
           </IntroHeadline>
         </Intro>
         <GridWrapper>
